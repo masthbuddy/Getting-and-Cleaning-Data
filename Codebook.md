@@ -34,20 +34,21 @@ was obtained by calculating variables from the time and frequency domain. "
 
 ## Code Description
 * All the files named above are read into tables
-* 'x_train' and 'x_test' are merged to form 'x_data'
-* 'y_train' and 'y_test' are merged to form 'y_data'
-* 'sub_train'(subject_train.txt) and 'sub_test'(subject_test.txt) are merged to form 'sub_data'* Using 'cbind', 'sub_data' and 'y_data'
-   are added as columns to 'x_data' with the headers 'Subject_id' and 'Activity_id'. This table is named 'all_data'.
-* 'activity_labels.txt' is read into the table 'activity_names'.
-*  Inner Join between 'all_data' and 'activity_names' is performed on the column 'activity_id'. This step generates the descriptive
-   names for the activity_id in the column 'activity_name'. Then 'activity_id' column is dropped as 'activity_name' already
+* `x_train` and `x_test` are merged to form `x_data`
+* `y_train` and `y_test` are merged to form `y_data`
+* `sub_train`(subject_train.txt) and `sub_test`(subject_test.txt) are merged to form `sub_data`
+* Using `cbind`, `sub_data` and `y_data`
+   are added as columns to `x_data` with the headers `Subject_id` and `Activity_id`. This table is named `all_data`.
+* `activity_labels.txt` is read into the table `activity_names`.
+*  Inner Join between `all_data` and `activity_names` is performed on the column `activity_id`. This step generates the descriptive
+   names for the activity_id in the column `activity_name`. Then `activity_id` column is dropped as `activity_name` already
    contains the information.
-* This final data is grouped by the columns 'subject_id' and 'activity_name'. 
-* On this grouped data, mean of the variables is calculates using 'summarise_each' function of 'dplyr' library.
-* The resultant file is written as 'group_mean_tidy_data.txt'
+* This final data is grouped by the columns `subject_id` and `activity_name`. 
+* On this grouped data, mean of the variables is calculates using `summarise_each` function of `dplyr` library.
+* The resultant file is written as `group_mean_tidy_data.txt`
 
 ## Variables in the final data* 
-* 'subject_id'
+* `subject_id`
 * `tBodyAccMeanX`
 * `tBodyAccMeanY`
 * `tBodyAccMeanZ`
@@ -127,5 +128,5 @@ was obtained by calculating variables from the time and frequency domain. "
 * `fBodyBodyGyroJerkMagMean`
 * `fBodyBodyGyroJerkMagStd`
 * `fBodyBodyGyroJerkMagMeanFreq`
-* 'activity_name' 
+* `activity_name` 
 
