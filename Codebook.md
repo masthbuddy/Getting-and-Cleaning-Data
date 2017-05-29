@@ -22,8 +22,8 @@ was obtained by calculating variables from the time and frequency domain. "
 * 561 variables relating to the metrics taken from accelerometer and gyroscope.
 * Activity 
 * Note: 
-  Units of accelerometer data is metres/(seconds squared)
-  Units of gyroscope data is radians/second
+  - Units of accelerometer data is metres/(seconds squared)
+  - Units of gyroscope data is radians/second
 
 ## Different files in the data
 - features.txt
