@@ -14,4 +14,4 @@
 Information about the variables in the datasets can be found in the file Codebook.md
 
 ## Code
-The full code with relevant code can be found in the file 'run_analysis.R'
+The full code with relevant comments can be found in the file 'run_analysis.R'
